@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.clr {
+    clear: both;
+}
+
+/*   (((((((((((((  setting  )))))))))))))   */
+.setting {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 3px #000;
+}
+
+.setting .setting-contant {
+    margin: 10px 0;
+    /* padding: 10px; */
+}
+
+.setting .setting-contant .icon-setting {
+    padding: 10px 13px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.setting .setting-contant .icon-setting:hover {
+    color: #8e7754;
+}
+
+.setting .setting-contant .titel-setting {
+    position: absolute;
+    right: 120%;
+    background-color: #fff;
+    width: 150px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 3px #000;
+}
+
+.setting .setting-contant:hover .titel-setting {
+    opacity: 1;
+    visibility: visible;
+}
+/*   (((((((((((((  setting  )))))))))))))   */
+
+
+/*   (((((((((((((  start header  )))))))))))))   */
+.header {
+    background-image: url(../img/drew-coffman-1872.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 100vh;
+}
+
+/*   (((((((((((((  start navbar  )))))))))))))   */
+.header .navbar {
+    background-color: rgba(21, 22, 22, 0.838);
+    padding: 10px 25px;
+}
+
+.header .navbar .logo {
+    width: 100px;
+    float: left;
+}
+
+.header .navbar .logo img {
+    width: 100%;
+}
+
+.header .navbar .menu {
+    float: right;
+}
+
+.header .navbar .menu ul {
+    list-style-type: none;
+}
+
+.header .navbar .menu ul li {
+    float: left;
+    padding: 10px 15px;
+}
+
+.header .navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.header .navbar .menu ul li a:hover {
+    color: #8e7754;
+}
+
+.header .navbar .icon-nav-bar {
+    color: #fff;
+    float: right;
+    padding: 5px;
+    transition: all .5s;
+    display: none;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+
+.header .navbar .icon-nav-bar:hover {
+    color: #8e7754;
+}
+
+@media screen and (max-width:992px) {
+    .header .navbar .menu {
+        padding: 40px 0;
+        float: none;
+        display: none;
+    }
+
+    .header .navbar .menu ul li {
+        float: none;
+    }
+
+    .header .navbar .icon-nav-bar {
+        display: block;
+    }
+}
+
+/*   (((((((((((((  end navbar  )))))))))))))   */
+
+/*   (((((((((((((  start header  )))))))))))))   */
+.header .header-contant {
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.header .header-contant h3 {
+    padding: 20px;
+}
+
+.header .header-contant h1 {
+    padding: 10px;
+    font-size: 50px;
+}
+
+.header .header-contant p {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.header .header-contant button {
+    background-color: #8e7754;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 7px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header .header-contant .btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all .5s;
+}
+
+.header .header-contant .btn:hover {
+    background-color: #fff;
+}
+
+/*   (((((((((((((  end header  )))))))))))))   */
+
+/*   (((((((((((((  start about  )))))))))))))   */
+.about{
+    padding: 30px;
+}
+.about .imgas-about{
+    float: left;
+    width: 40%;
+}
+.about .imgas-about img{
+    width: 100%;
+}
+.about .contant-about{
+    float: right;
+    width: 50%;
+}
+.about .contant-about h3{
+    text-align: center;
+    font-size: 23px;
+    padding: 20px 0;
+}
+.about .contant-about p{
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+}
+.about .contant-about ul{
+    list-style: none;
+}
+.about .contant-about ul li{
+    padding: 10px 0;
+}
+.about .contant-about ul li .icon-list{
+    color: #8e7754;
+    padding: 10px;
+    border: 1px #8e7754 solid;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+@media screen and (max-width:992px) {
+    .about .imgas-about{
+        float: none;
+        width: 100%;
+    }
+    .about .contant-about{
+        float: none;
+        width: 100%;
+    }
+}
+/*   (((((((((((((  end about  )))))))))))))   */
+
+/*   (((((((((((((  start Our Offer  )))))))))))))   */
+.our-offer{
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+.our-offer .contant-our{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.our-offer .contant-our h3{
+    padding: 20px;
+    font-size: 23px;
+}
+.our-offer .contant-our p{
+    padding: 20px 20px;
+    line-height: 25px;
+}
+.our-offer .imags-our{
+    float: right;
+    width: 40%;
+}
+.our-offer .imags-our img{
+    width: 100%;
+}
+@media screen and (max-width:992px) {
+    .our-offer .imags-our{
+        float: none;
+        width: 100%;
+    }
+    .our-offer .contant-our{
+        float: none;
+        width: 100%;
+    }
+}
+/*   (((((((((((((  end Our Offer  )))))))))))))   */
+
+/*   (((((((((((((  gallry  )))))))))))))   */
+.gallry{
+    padding: 30px;
+    text-align: center;
+}
+.gallry h2{
+    font-size: 23px;
+    padding: 20px;
+}
+.gallry > p{
+    padding: 20px;
+    font-weight: 600;
+}
+.gallry .item{
+    padding: 20px;
+    float: left;
+    width: 33.333%;
+}
+.gallry .item img{
+    width: 100%;
+}
+.gallry .item h3{
+    padding: 20px;
+}
+.gallry .item p{
+    padding: 10px;
+}
+@media screen and (max-width:768px){
+    .gallry .item{
+        width: 100%;
+    }
+}
+
+/*   (((((((((((((  gallry  )))))))))))))   */
+
+/*   (((((((((((((  blog  )))))))))))))   */
+.blog{
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+.blog .contant-blog{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.blog .contant-blog h3{
+    font-size: 23px;
+    padding: 20px;
+}
+.blog .contant-blog p{
+    padding: 20px;
+}
+.blog .contant-blog ul{
+    text-align: left;
+    padding: 20px;
+    list-style: none;
+}
+
+.blog .contant-blog ul li .icon-blog{
+    padding: 10px ;
+    background-color: #8e7754;
+    border-radius: 50%;
+    margin: 10px;
+    color: #fff;
+}
+.blog .blog-loction{
+    float: right;
+    width: 40%;
+}
+.blog .blog-loction iframe{
+    width: 100%;
+}
+@media screen and (max-width:992px){
+    .blog .contant-blog{
+        float: none;
+        width: 100%;
+    }
+    .blog .blog-loction{
+        float: none;
+        width: 100%;
+    }
+}
+
+/*   (((((((((((((  blog  )))))))))))))   */
+
+/*   (((((((((((((  blog  )))))))))))))   */
+.contact{
+    background-color: #403d38;
+    padding: 30px;
+}
+.contact .item-contact{
+    width: 25%;
+    float: left;
+    padding: 20px;
+    color: #ddddddca;
+}
+.contact .item-contact h4{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0 ;
+}
+.contact .item-contact ul li{
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e3e321;
+}
+.contact .item-contact ul li i{
+    padding: 0 10px;
+}
+.contact .item-contact ul .contact-us{
+    transition: all .5s;
+    cursor: pointer;
+}
+.contact .item-contact ul .contact-us:hover{
+    color: #fff;
+}
+@media screen and (max-width:568px) {
+    .contact .item-contact{
+        width: 100%;
+    }
+}
+@media screen and (min-width:569px) and (max-width:768px) {
+    .contact .item-contact{
+        width: 50%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .contact .item-contact{
+        width: 33.333%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .contact .item-contact{
+        width: 25%;
+    }
+}
+@media screen and (min-width:1201px) {
+    .contact .item-contact{
+        width: 25%;
+    }
+}
+/*   (((((((((((((  blog  )))))))))))))   */
+
+/*   (((((((((((((  footer  )))))))))))))   */
+.footer{
+    padding: 30px;
+    background-color: #353330;
+    text-align: center;
+}
+.footer p{
+    padding: 20px ;
+    color: #fff;
+}
+.footer a{
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .5s;
+    font-size: 18px;
+}
+.footer a:hover{
+    color: #8e7754;
+}
+@media screen and (max-width:568px){
+    .footer img{
+        height: 50px;
+    }
+}
+@media screen and (min-width:569px) and (max-width:768px){
+    .footer img{
+        height: 80px;
+    }
+}
+/*   (((((((((((((  footer  )))))))))))))   */
